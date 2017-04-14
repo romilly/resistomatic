@@ -1,0 +1,50 @@
+{
+  "type": "generic-dip", 
+  "title": "2 MHz rail-to-rail Op Amp", 
+  "label": "MCP6273", 
+  "description": "Single-supply rail-to-rail op amp.\n\nDatasheet: http://ww1.microchip.com/downloads/en/DeviceDoc/21810f.pdf", 
+  "tags": [
+    "DIP", 
+    "MCP6273", 
+    "Op Amp"
+  ], 
+  "icon": {
+    "label1": "MCP", 
+    "label2": "6273"
+  }, 
+  "pins": 8, 
+  "connectors": {
+    "1": {
+      "label": "NC", 
+      "description": "No connection."
+    }, 
+    "2": {
+      "label": "Vin-", 
+      "description": "Inverting input."
+    }, 
+    "3": {
+      "label": "Vin+", 
+      "description": "Non-inverting input."
+    }, 
+    "4": {
+      "label": "Vss", 
+      "description": "Negative supply voltage."
+    }, 
+    "5": {
+      "label": "NC", 
+      "description": "No connection."
+    }, 
+    "6": {
+      "label": "Vout", 
+      "description": "Output Voltage."
+    }, 
+    "7": {
+      "label": "Vdd", 
+      "description": "Positive supply voltage."
+    }, 
+    "8": {
+      "label": "~CS", 
+      "description": "Chip Select (active low)."
+    }
+  }
+}
