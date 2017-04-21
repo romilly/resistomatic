@@ -2,9 +2,9 @@ from microbit import *
 
 display.off()
 
-output_pins = [pin1, pin2, pin3, pin4, pin6, pin7, pin8]  # pin 5 not used
+output_pins = [pin4, pin6, pin7, pin8, pin9, pin10, pin12]  # pin 5 not used
 resistors = [1000000, 330000, 100000, 33000, 10000, 3300, 1000]
-analog_pin = pin10
+analog_pin = pin3
 SAMPLE_COUNT = 10
 Vcc = 3.3  # Positive rail voltage
 Vmid = 0.5 * Vcc
@@ -41,6 +41,7 @@ while True:
         pin.write_digital(1)
         sleep(5)
         av = average_voltage(analog_pin)
+        print(r1, av)
         difference = abs(Vmid - av)
         if av < Vcc and difference < minimum:
             minimum = difference
