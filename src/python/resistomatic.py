@@ -28,7 +28,7 @@ def resistance_from(res, volts):
     return res / (Vcc / volts - 1.0);
 
 
-# put the pins into high-impedence mode
+# put the pins into high-impedance mode
 for pin in output_pins:
     pin.write_digital(0)
     pin.read_digital()
